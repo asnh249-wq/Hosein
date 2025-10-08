@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معرفی حسین گیمر</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Vazirmatn", sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #101820);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .avatar-circle {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #00ffcc;
+      box-shadow: 0 0 25px rgba(0, 255, 204, 0.7);
+      margin-bottom: 25px;
+    }
+
+    .avatar-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 { font-size: 22px; margin: 10px 0; color: #00ffcc; text-shadow: 0 0 10px #00ffcc; }
+
+    p { max-width: 420px; line-height: 1.9; font-size: 16px; margin-bottom: 20px; }
+
+    .btn {
+      background: linear-gradient(90deg, #00ffcc, #00bfa5);
+      color: #000;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 40px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px #00ffcc;
+      margin: 8px;
+    }
+
+    .btn:hover { transform: scale(1.1); box-shadow: 0 0 25px #00ffcc; }
+
+    textarea {
+      width: 80%;
+      height: 300px;
+      margin-top: 20px;
+      background: #111;
+      color: #0f0;
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
+      padding: 10px;
+      font-family: monospace;
+      display: none;
+    }
+
+    footer { position: absolute; bottom: 15px; font-size: 13px; color: #777; }
+  </style>
+</head>
+<body>
+  <div class="avatar-circle">
+    <img src="https://i.ibb.co/z60WcCM/pixel-gamer-avatar.png" alt="آواتار گیمر" />
+  </div>
+
+  <h1>سلام! 👋</h1>
+
+  <p>
+    من یه گیمر معمولی به نام <strong>حسین</strong> هستم 😎  
+    بیشتر گیم‌ها رو تست کردم و تجربه زیادی دارم و تو کدهای HTML حرفه‌ای‌ام.  
+    همیشه دنبال پیشرفت هستم و قراره بزودی یه <strong>یوتیوبر</strong> بشم  
+    و در نسل آینده شاهکار خلق کنم 🎮🔥
+  </p>
+
+  <button class="btn" onclick="window.location.href='https://rubika.ir/BlakMarkat'">
+    ورود به چنل روبیکا
+  </button>
+
+  <button class="btn" onclick="generateSite()">
+    ساخت سایت برای خودم 🌐
+  </button>
+
+  <button class="btn" onclick="showTutorial()">
+    آموزش ساخت 📝
+  </button>
+
+  <textarea id="codeBox" readonly></textarea>
+
+  <footer>© 2025 Hossein Gamer | All Rights Reserved</footer>
+
+  <script>
+    function generateSite() {
+      const name = prompt("لطفا اسمتو وارد کن (مثلاً علی):");
+      if (!name) return;
+
+      const htmlCode = `
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سایت ${name}</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #111, #1f1f1f);
+    color: white;
+    font-family: 'Vazirmatn', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  h1 { color: #00ffcc; text-shadow: 0 0 10px #00ffcc; }
+  p { max-width: 400px; text-align: center; }
+</style>
+</head>
+<body>
+  <h1>سلام من ${name} هستم 😎</h1>
+  <p>این یه سایت ساده ساخته شده توسط حسین گیمره! ✨</p>
+</body>
+</html>`;
+
+      const box = document.getElementById("codeBox");
+      box.style.display = "block";
+      box.value = htmlCode.trim();
+      box.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function showTutorial() {
+      alert(
+`مراحل ساخت سایت مرورگر شما: 🥶
+
+1. کد را کپی کنید
+2. یک فایل بسازید
+3. اسم فایل را man.html بزارید
+4. کد را داخل فایل بزارید
+5. روی فایل کلیک کنید
+6. روی مرورگر کلیک کنید
+7. تموم شد! سایت مرورگری شما ساخته شد 🎉`
+      );
+    }
+  </script>
+</body>
+                                                      </html>
